@@ -69,9 +69,6 @@ public class MainActivity extends AppCompatActivity {
                 valueA = Integer.parseInt(userInputTextView.getText().toString().trim());
                 userInputTextView.setText("0");
                 break;
-            case R.id.modulus_button:
-
-                break;
             case R.id.subtract_button:
                 operator = 1;
                 valueA = Integer.parseInt(userInputTextView.getText().toString().trim());
@@ -81,11 +78,16 @@ public class MainActivity extends AppCompatActivity {
                 operator = 2;
                 valueA = Integer.parseInt(userInputTextView.getText().toString().trim());
                 userInputTextView.setText("0");
-
                 break;
             case R.id.multiply_button:
-
+                operator = 3;
+                valueA = Integer.parseInt(userInputTextView.getText().toString().trim());
+                userInputTextView.setText("0");
                 break;
+            case R.id.modulus_button:
+                operator = 4;
+                valueA = Integer.parseInt(userInputTextView.getText().toString().trim());
+                userInputTextView.setText("0");
             case R.id.period_button:
 
                 break;
@@ -110,6 +112,12 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case 2://division
                 answer = (valueA / valueB);
+                break;
+            case 3://multiplication
+                answer = (valueA * valueB);
+                break;
+            case 4://modulus
+                answer = (valueA % valueB);
                 break;
         }
 
