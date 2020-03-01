@@ -12,7 +12,7 @@
         android:id="@+id/user_input_textview"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight=".15"
+        android:layout_weight=".225"
         android:gravity="center|end"
         android:padding="@dimen/dimen_16dp"
         android:text="0"
@@ -23,13 +23,22 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight=".85"
+        android:layout_weight=".775"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight=".2">
+
+            <Button
+                android:id="@+id/x_squared_button"
+                style="@style/CalculatorButtonGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:onClick="calcClick"
+                android:text="x^2" />
 
             <Button
                 android:id="@+id/ac_button"
@@ -79,6 +88,15 @@
             android:layout_weight=".2">
 
             <Button
+                android:id="@+id/x_cubed_button"
+                style="@style/CalculatorButtonGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:onClick="calcClick"
+                android:text="x^3" />
+
+            <Button
                 android:id="@+id/seven_button"
                 style="@style/CalculatorButtonGrey"
                 android:layout_width="wrap_content"
@@ -122,6 +140,15 @@
             android:layout_weight=".2">
 
             <Button
+                android:id="@+id/sin_button"
+                style="@style/CalculatorButtonGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:onClick="calcClick"
+                android:text="sin" />
+
+            <Button
                 android:id="@+id/four_button"
                 style="@style/CalculatorButtonGrey"
                 android:layout_width="wrap_content"
@@ -137,7 +164,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight=".25"
                 android:onClick="calcClick"
-                android:text="@string/five_number" />
+                android:text="5" />
 
             <Button
                 android:id="@+id/six_button"
@@ -163,6 +190,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight=".2">
+
+            <Button
+                android:id="@+id/cos_button"
+                style="@style/CalculatorButtonGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:onClick="calcClick"
+                android:text="cos" />
 
             <Button
                 android:id="@+id/one_button"
@@ -206,6 +242,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight=".2">
+
+            <Button
+                android:id="@+id/tan_button"
+                style="@style/CalculatorButtonGreen"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:onClick="calcClick"
+                android:text="tan" />
 
             <Button
                 android:id="@+id/zero_button"

@@ -2,5 +2,6 @@
     <string name="app_name">Calculator101</string>
     <string name="five_number">five</string>
     <string name="zero_text">0</string>
-    <string name="greeting_text">Hi %s how are you today. It is %d degrees outside.</string>
+    <string name="greeting_text">Welcome to %s Calculator</string>
+    <string name="coming_soon_text">coming soon . . .</string>
 </resources>
